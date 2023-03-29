@@ -1,0 +1,422 @@
+<html>
+
+<head>
+    <title>
+        Discord Clone
+    </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Changa:wght@600;700;800&family=Noto+Sans+Symbols:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;700&display=swap');
+
+        body {
+            margin: 0px;
+        }
+
+        .banner {
+            height: 80%;
+            width: 100%;
+            background-image: url(discord\ bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .logopng {
+            display: block;
+            height: 22px;
+            transition-duration: 0.4s;
+
+        }
+
+        .logopng:hover {
+            transform: rotate(360deg);
+        }
+
+        .mainlogo {
+            display: flex;
+            align-items: center;
+
+
+        }
+
+        .logotext {
+            margin-left: 9px;
+            font-family: noto sans symbols;
+            font-weight: 2000;
+            color: white;
+            cursor: pointer;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+
+        .eightitemsfromnavbar {
+            display: flex;
+            align-items: center;
+        }
+
+        .loginbutton {
+            font-family: noto sans symbols;
+            font-size: smaller;
+            margin-left: 150px;
+            background: white;
+            padding: 7px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 20px;
+            font-weight: 500;
+            transition-duration: 0.4s;
+        }
+
+        .loginbutton:hover {
+            background-color: #23272A;
+            color: white;
+        }
+
+        .eightitemsfromnavbar ul {
+            list-style: none;
+            display: inline-block;
+
+        }
+
+        .eightitemsfromnavbar ul li {
+            display: inline-block;
+            margin: 27px;
+        }
+
+        .eightitemsfromnavbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-family: noto sans symbols;
+            font-weight: 20000000;
+            font-size: 15px;
+        }
+
+        .eightitemsfromnavbar ul li a:hover {
+            text-decoration: underline;
+
+        }
+
+        .imagineaplace {
+            font-family: changa;
+            text-align: center;
+            color: white;
+            font-weight: 900;
+            font-size: 75px;
+            letter-spacing: 3px;
+            margin-top: 30px;
+
+        }
+
+        .underimagineaplace {
+            text-align: center;
+            font-family: noto sans symbols;
+            color: white;
+
+
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 55px;
+            font-size: 20px;
+        }
+
+        .buttons ul li a {
+            text-decoration: none;
+
+
+        }
+
+        .buttons ul li {
+            display: inline-block;
+
+        }
+
+        .download {
+            margin-right: 80px;
+            background: white;
+            padding: 8px;
+            padding-left: 25px;
+            padding-right: 25px;
+            font-family: noto sans symbols;
+            border-radius: 26px;
+            color: black;
+            transition-duration: 0.4s;
+        }
+
+        .download:hover {
+            background-color: #23272A;
+            color: white;
+        }
+
+        .open {
+            background: #23272A;
+            padding: 8px;
+            padding-right: 10px;
+            padding-left: 10px;
+            font-family: noto sans symbols;
+            color: white;
+            border-radius: 26px;
+            transition-duration: 0.4s;
+        }
+
+        .open:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .studygroup {
+            display: block;
+        }
+
+        .class1 {
+            margin-top: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .create {
+            font-family: arial;
+            font-weight: 900;
+            font-size: 42px;
+            letter-spacing: 2px;
+            color: #23272A;
+            line-height: 95%;
+
+        }
+
+        .undercreate {
+            margin-top: 30px;
+            font-family: noto sans symbols;
+            font-size: larger;
+            font-weight: 300;
+            color: #23272A;
+            line-height: 160%;
+        }
+        .justchilling{
+            display: block;
+        }
+        .class2{
+            margin-top: 150px;
+            padding: 130px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background: rgba(232, 228, 224, 0.371);
+            gap: 80px;
+        }
+        .hangingout{
+            color: #23272A;
+            font-family: arial;
+            font-weight: 900;
+            font-size: 42px;
+            letter-spacing: 2px;
+            line-height: 95%;
+            
+        }
+        .underhangingout{
+            margin-top: 30px;
+            font-family: noto sans symbols;
+            font-size: larger;
+            font-weight: 300;
+            color: #23272A;
+            line-height: 160%;
+            
+        }
+        .class3{
+            margin-top: 148px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .fandom{
+            color: #23272A;
+            font-family: arial;
+            font-weight: 900;
+            font-size: 42px;
+            letter-spacing: 2px;
+            line-height: 95%;
+        }
+        .underfandom{
+            margin-top: 30px;
+            font-family: noto sans symbols;
+            font-size: larger;
+            font-weight: 300;
+            color: #23272A;
+            line-height: 160%;
+        }
+        .class4{
+            text-align: center;
+            background-color:rgba(232, 228, 224, 0.371);
+            padding: 100px;
+            margin-top: 140px;
+        }
+        .reliable{
+            color: #23272A;
+            font-family: arial;
+            font-weight: 900;
+            font-size: 42px;
+            letter-spacing: 2px;
+
+        }
+        .underreliable{
+            margin-top: 30px;
+            font-family: noto sans symbols;
+            font-size: larger;
+            font-weight: 300;
+            color: #23272A;
+            line-height: 160%;
+        }
+        .justchillingbigone{
+            display: block;
+            width: 100%;
+        }
+        
+        .starsending{
+            line-height: 1%;
+        }
+        .ready{
+            color: #23272A;
+            font-family: arial;
+            font-weight: 900;
+            font-size: 25px;
+            letter-spacing: 2px;
+            margin-bottom: 62px;
+        }
+        .class4 a{
+            margin-top: 10px;
+            text-decoration: none;
+            background: #5865F2;
+            font-family: noto sans symbols;
+            color: white;
+            padding: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+            border-radius: 35px;
+            font-size: 17px;
+        }
+        .class4 a:hover{
+            background: #7a84fa;
+           
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <div class="mainlogo">
+                <img src="discord logo.png" class="logopng">
+                <h3 class="logotext">Discord</h3>
+            </div>
+            <div class="eightitemsfromnavbar">
+                <ul>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">Nitro</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="#">Safety</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Carrers</a></li>
+                </ul>
+                <h3 class="loginbutton">Login</h3>
+            </div>
+
+
+        </div>
+
+        <div class="imagineaplace">IMAGINE A PLACE...</div>
+        <div class="underimagineaplace">
+            ...where you can belong to a school club, a gaming group, or a worldwide art community. <br>
+            Where just you and a handful of friends can spend time together. A place that makes it easy <br>
+            to talk every day and hang out more often.
+
+        </div>
+        <div class="buttons">
+            <ul>
+                <li><a href="#" class="download">Download for Windows</a></li>
+                <li><a href="#" class="open">Open Discord in your Browser</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <br><br><br><br>
+    <div class="class1">
+        <img src="studygroup.png" class="studygroup">
+        <div class="text1">
+            <div class="create">
+                Create an invite- <br>
+                only place where <br>
+                you belong
+
+            </div>
+            <div class="undercreate">
+                Discord servers are organized into topic- <br>
+                based channels where you can collaborate, <br>
+                clogging up a group chat.
+            </div>
+        </div>
+    </div>
+    <div class="class2">
+        <div class="text2">
+            <div class="hangingout"> 
+                Where hanging <br>
+                out is easy
+            </div>
+            <div class="underhangingout">
+                Grab a seat in a voice channel when you’re <br>
+                free. Friends in your server can see you’re <br>
+                around and instantly pop in to talk without <br>
+                having to call.
+            </div>
+            
+        </div>
+        <img src="justchilling.png" alt="">
+    </div>
+    <div class="class3">
+        <img src="coach.png" alt="">
+        <div class="text3">
+            <div class="fandom">
+                From few to a <br>
+                fandom
+    
+            </div>
+            <div class="underfandom">
+                Get any community running with moderation <br>
+                tools and custom member access. Give <br>
+                members special powers, set up private <br>
+                channels, and more.
+    
+            </div>
+        </div>
+    </div>
+    <div class="class4">
+        <h1 class="reliable">RELIABLE TECH FOR STAYING CLOSE
+
+        </h1>
+        <p class="underreliable">
+            Low-latency voice and video feels like you’re in the same room. Wave hello over video, watch friends stream their <br> 
+            games, or gather up and have a drawing session with screen share.
+
+
+        </p>
+        <img src="justchilling bigone.png" class="justchillingbigone">
+        <br><br>
+        <div class="starsending">
+            <img src="stars.png" class="stars">
+            <h2 class="ready">Ready to start your journey?</h2>
+        </div>
+        <a href="#" class="download2">Download for Windows</a>
+    
+    </div>
+
+
+</body>
+
+</html>
